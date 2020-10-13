@@ -1,0 +1,12 @@
+C:\Users\oalshmali\source\repos\installationApp\installationApp\bin\Debug\installationApp.exe.config
+C:\Users\oalshmali\source\repos\installationApp\installationApp\bin\Debug\installationApp.exe
+C:\Users\oalshmali\source\repos\installationApp\installationApp\bin\Debug\installationApp.pdb
+C:\Users\oalshmali\source\repos\installationApp\installationApp\bin\Debug\Nexus.dll
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.csprojAssemblyReference.cache
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.Form1.resources
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.Properties.Resources.resources
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.csproj.GenerateResource.cache
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.csproj.CoreCompileInputs.cache
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.csproj.CopyComplete
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.exe
+C:\Users\oalshmali\source\repos\installationApp\installationApp\obj\Debug\installationApp.pdb
