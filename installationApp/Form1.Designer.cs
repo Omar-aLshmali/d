@@ -37,12 +37,12 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// listBox1
+			// allProgramsList
 			// 
 			this.allProgramsList.FormattingEnabled = true;
 			this.allProgramsList.HorizontalScrollbar = true;
 			this.allProgramsList.Location = new System.Drawing.Point(491, 32);
-			this.allProgramsList.Name = "listBox1";
+			this.allProgramsList.Name = "allProgramsList";
 			this.allProgramsList.Size = new System.Drawing.Size(260, 225);
 			this.allProgramsList.TabIndex = 0;
 			// 
@@ -126,7 +126,7 @@
 			this.Controls.Add(this.checkList);
 			this.Controls.Add(this.allProgramsList);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "Program Installer";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

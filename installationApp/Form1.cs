@@ -28,33 +28,35 @@ namespace installationApp
         private void Form1_Load(object sender, EventArgs e)
 		{
 			ToInstalItemAdd();
-			
 			IsInstalledView();
 			foreach (var i in InstalledPrograms.GetInstalledPrograms())
             {
 				allProgramsList.Items.Add(i);
 			}
 		}
-
+		/// <summary>
+		///  This method packs the result of installed and uninstalled programs into a list.
+		/// </summary>
 		private void IsInstalledView()
 		{
-			List<string> apps = ToControlList();
-			for (int i = 0; i < apps.Count; i++)
+			List<string> apps = ToControlList(); // Content of the ToControlList method in apps list
+			for (int i = 0; i < apps.Count; i++) 
 			{
-				if (check.CheckInstalled(apps[i]))
+				// Using the CheckInstalled method, all programs are checked by name to see if they are installed.
+				if (check.CheckInstalled(apps[i])) // If the method returns true, then Program is inatall.
 				{
-					checkList.Items.Add(apps[i] + " ist installiert");
+					checkList.Items.Add(apps[i] + " ist installiert"); 
 				}
-				else
+				else 
 				{
 					if (apps[i].Equals("NuGet"))
 					{
-						if (File.Exists(@"C:\ProgramFiles\NuGet" + "\\nuget.exe") == false)
+						if (File.Exists(@"C:\ProgramFiles\NuGet" + "\\nuget.exe") == false) //is checked, if a folder of "NuGet" already exists
 						{
 							checkList.Items.Add(apps[i] + " ist nicht vorhanden");
 							checkList.Items[i].ForeColor = Color.Red;
 						}
-						else
+						else 
 						{
 							checkList.Items.Add(apps[i] + " ist vorhanden");
 						}
@@ -65,7 +67,10 @@ namespace installationApp
 						checkList.Items[i].ForeColor = Color.Red;
 					}
 				}}}
-         private void ToInstalItemAdd()
+		/// <summary>
+		/// List of program names, with possibility to install them if they are not already installed. 
+		/// </summary>
+		private void ToInstalItemAdd()
 		{
 			toInstall.Items.Add("Install Visual Studio");
 			toInstall.Items.Add("Install Visual Studio üder Chocolaty");
@@ -75,6 +80,10 @@ namespace installationApp
 			toInstall.Items.Add("install Notepad++");
 			toInstall.Items.Add("Install 7-Zip");
 		}
+		/// <summary>
+		/// List of programs that need to be checked.
+		/// </summary>
+		/// <returns>Contents of the list</returns>
 		private static List<string> ToControlList()
 		{
 			return new List<string>
@@ -86,6 +95,9 @@ namespace installationApp
 				"NuGet"
 			};
 		}
+		/// <summary>
+		/// dieser Butten ist mit toinstal-list verbunden, beim drücken wird die ausgewählte Option installiert.
+		/// </summary>
         private void BtnInstal_Click(object sender, EventArgs e)
         {
             int index = toInstall.SelectedIndex;
