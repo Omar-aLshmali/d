@@ -11,7 +11,6 @@ namespace installationApp
     {
         const string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
 
-
         public static List<string> GetInstalledPrograms()
         {
             var result = new List<string>();
@@ -45,7 +44,6 @@ namespace installationApp
         {
             var name = (string)subkey.GetValue("DisplayName");
             var releaseType = (string)subkey.GetValue("ReleaseType");
-            //var unistallString = (string)subkey.GetValue("UninstallString");
             var systemComponent = subkey.GetValue("SystemComponent");
             var parentName = (string)subkey.GetValue("ParentDisplayName");
 
